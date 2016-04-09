@@ -6,6 +6,7 @@
 **使用前你要需要**
 * QQ 会员
 * 漫游全部好友
+* 下载最新的 [releases](https://github.com/17/seals/releases)
 
 **怎么使用**
 * 打开 [electron](https://github.com/electron/electron#downloads) 后，将 `seals.asar` 拖进窗口
