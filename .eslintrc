@@ -1,0 +1,8 @@
+{
+  "parser": "babel-eslint",
+  "extends": "standard",
+  "rules": {
+    "comma-style": [1, "first"],
+    "arrow-parens": [1, "as-needed"]
+  }
+}
