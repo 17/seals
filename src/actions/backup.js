@@ -78,19 +78,12 @@ async function backupChatHistory (friend) {
           , media: _media
           , prev } = await roam.chatHistory(friend, date, offset)
     if (code !== 0) {
-      const errorMap = {
-        16: `${friend} 的消息记录是空的`
-      }
       notificationState.add({
         type: 'warning'
-        , content: errorMap[code] || error
+        , content: error
         // , delay: 8e3
       })
-      // 没有消息记录
-      if (code === 16) {
-        return
-      }
-      break
+      continue
     }
     if (prev !== null) {
       date = prev.date
@@ -98,7 +91,17 @@ async function backupChatHistory (friend) {
     }
     message = message.concat(_message)
     media = media.concat(_media)
-  } while (prev !== null)
+  } while (prev != null)
+
+  // 没有消息记录
+  if (message.length === 0) {
+    notificationState.add({
+      type: 'warning'
+      , content: `${friend} 的消息记录是空的`
+      // , delay: 8e3
+    })
+    return
+  }
 
   // console.log({ message, media })
   await save(friend, message, media)
