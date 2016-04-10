@@ -78,11 +78,14 @@ async function backupChatHistory (friend) {
           , media: _media
           , prev } = await roam.chatHistory(friend, date, offset)
     if (code !== 0) {
-      notificationState.add({
-        type: 'warning'
-        , content: error
-        // , delay: 8e3
-      })
+      // 避免重复提示
+      if (code !== 16) {
+        notificationState.add({
+          type: 'warning'
+          , content: error
+          // , delay: 8e3
+        })
+      }
       continue
     }
     if (prev !== null) {
