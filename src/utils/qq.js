@@ -79,6 +79,9 @@ function normalizeFriendList (grp, remarks) {
       , name: group.gn
       , friend: []
     }
+    if (group.frd == null) {
+      continue
+    }
     for (let j = 0; j < group.frd.length; j++) {
       let friend = group.frd[j]
       friendList.friend.push({
