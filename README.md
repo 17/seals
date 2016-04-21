@@ -62,8 +62,5 @@ for (const slice of content) {
 - [ ] webpack 热重载莫名工作不能...
 - [ ] 自动化 release
 
-## ~~如果觉得不错，请务必打赏我 。(ಡωಡ)~~
-![厚脸皮要打赏](http://i.imgur.com/SbB6SQu.jpg)
-
 ## License
 MIT
