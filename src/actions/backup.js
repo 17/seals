@@ -5,7 +5,7 @@ import notificationState from '../stores/notification'
 import helpers from '../utils/helpers'
 import request from '../utils/srequest'
 
-const fs = global.require('fs')
+import fs from 'fs'
 // FIXME: 使用 path 合并路径
 // const path = global.require('path')
 import sqlite from 'sql.js'
