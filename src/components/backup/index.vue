@@ -27,8 +27,7 @@
   import backupAction from '../../actions/backup'
   import backupState from '../../stores/backup'
   import notificationState from '../../stores/notification'
-  const remote = global.require('remote')
-  const dialog = remote.require('dialog')
+  const { dialog } = global.require('electron').remote
   export default {
     computed: {
       state () {

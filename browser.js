@@ -1,7 +1,6 @@
 'use strict'
 
-const app = require('app')
-const BrowserWindow = require('browser-window')
+const { app, BrowserWindow } = require('electron')
 
 app.once('ready', () => {
   const mainWindow = new BrowserWindow({
@@ -11,7 +10,7 @@ app.once('ready', () => {
   })
 
   mainWindow.setMenuBarVisibility(false)
-  mainWindow.loadUrl('file://' + __dirname + '/static/hello.html')
+  mainWindow.loadURL(`file://${__dirname}/static/hello.html`)
   // mainWindow.openDevTools()
 })
 

@@ -1,11 +1,11 @@
 {
   "name": "seals",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "备份你在 QQ 云端的聊天记录。",
   "main": "browser.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "asar pack release seals.asar"
+    "build": "asar pack release release/seals.asar"
   },
   "author": "unmric",
   "license": "MIT",
