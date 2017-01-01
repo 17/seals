@@ -1,6 +1,6 @@
 {
   "name": "seals",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "备份你在 QQ 云端的聊天记录。",
   "main": "browser.js",
   "scripts": {
