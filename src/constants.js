@@ -98,7 +98,7 @@ const LOGIN_PARAM = {
 }
 const ROAM_LOGIN_PUBLICKEY = 'C7715BD43123CB49A48A84006D94215933EC9AE850582D3D3BB5306DDB7BE3D7A5144240FE584F16B89E1124A66BF37B383458E09B56A15E671B707A5A435220950DEAFBBACE54CB1524E23819A8BD8AD9E6AD1CC1A4C20CC4BD2F77327128B05C1689EC550E36D2B93B91BC802537FB527E7824DE0D2F71BC649B557209C7B3'
 
-const loginQRURL = () => 'https://ssl.ptlogin2.qq.com/ptqrshow?regmaster=2&appid=' + APPID + '&e=0&l=M&s=5&d=72&v=4&t=' + Math.random()
+const loginQRURL = () => 'https://ssl.ptlogin2.qq.com/ptqrshow?appid=' + APPID + '&e=0&l=M&s=5&d=72&v=4&t=' + Math.random()
 const loginPageURL = () => helpers.buildURL('https://ui.ptlogin2.qq.com/cgi-bin/login', LOGIN_PAGE_PARAM)
 const checkLoginURL = () => helpers.buildURL('https://ssl.ptlogin2.qq.com/ptqrlogin', Object.assign(FORM_VALUE, LOGIN_PARAM))
 const checkVersionURL = () => 'https://ui.ptlogin2.qq.com/ptui_ver.js?ptui_identifier=000D3EED6BC356D218375E906917F79F1CDE079557F46156492D0F2C&v=' + Math.random()
