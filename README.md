@@ -1,4 +1,4 @@
-# Seals
+# Seals | 失效，腾讯已关闭 api
 
 ![Seals](http://i.imgur.com/bJZzxwF.jpg)
 一个 electron/vue 小练手，它能帮你备份在 QQ 云端的聊天记录。
